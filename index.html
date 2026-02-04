@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fairchild Deployment Hub</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; background:#f6f7fb; color:#111; }
+    header { background:#111827; color:#fff; padding: 28px 18px; }
+    header h1 { margin:0; font-size: 26px; }
+    header p { margin:10px 0 0; opacity: .9; max-width: 800px; }
+    .wrap { max-width: 980px; margin: 0 auto; padding: 18px; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 14px; }
+    .card { background:#fff; border-radius: 14px; padding: 14px; box-shadow: 0 1px 8px rgba(0,0,0,.06); }
+    h2 { margin: 18px 0 10px; font-size: 18px; }
+    .pill { display:inline-block; background:#eef2ff; color:#1f2a6d; padding: 6px 10px; border-radius: 999px; font-size: 12px; }
+    ul { margin: 10px 0 0; padding-left: 18px; }
+    li { margin: 8px 0; }
+    footer { font-size: 12px; opacity: .7; padding: 16px 18px; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <h1>Fairchild Deployment Hub</h1>
+      <p>
+        Support, connection, and resources for families with members who are deployed,
+        leaving soon, or recently returned. You are not alone — we are here to help.
+      </p>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <h2>Upcoming Deployment Events</h2>
+    <div class="grid">
+      <div class="card">
+        <span class="pill">Deployment Event</span>
+        <h3 style="margin:10px 0 6px;">Deployed Family Dinner</h3>
+        <p style="margin:0;">📅 Feb 20 • ⏰ 5:00 PM</p>
+        <p style="margin:6px 0 0;">📍 Community Center</p>
+        <p style="margin:10px 0 0; opacity:.85;">
+          Open to families with members who are deployed, leaving soon,
+          or recently returned. Dinner, connection, and support.
+        </p>
+      </div>
+
+      <div class="card">
+        <span class="pill">Creative Event</span>
+        <h3 style="margin:10px 0 6px;">Welcome Home Sign Making</h3>
+        <p style="margin:0;">📅 Feb 27 • ⏰ 3:00–5:00 PM</p>
+        <p style="margin:6px 0 0;">📍 MFRC</p>
+        <p style="margin:10px 0 0; opacity:.85;">
+          Make a sign to welcome your loved one home. All supplies provided.
+        </p>
+      </div>
+    </div>
+
+    <h2>You Are Not Alone</h2>
+    <div class="card">
+      <p style="margin:0;">
+        Deployment can be challenging for the entire family. Whether your member
+        is currently deployed, preparing to leave, or adjusting after returning home,
+        the MFRC is here to support you with resources, events, and one-on-one help.
+      </p>
+    </div>
+
+    <h2>Contact</h2>
+    <div class="card">
+      <ul>
+        <li><strong>Tracy Hageman</strong></li>
+        <li>📞 247-2556</li>
+        <li>📧 tracy.hageman@us.af.mil</li>
+      </ul>
+    </div>
+  </main>
+
+  <footer class="wrap">
+    Last updated: <span id="updated"></span>
+  </footer>
+
+  <script>
+    document.getElementById("updated").textContent = new Date().toLocaleDateString();
+  </script>
+</body>
+</html>
